@@ -1,13 +1,12 @@
-# Template - Testing Sostenible con TypeScript
+# Kata: password validator
 
-Plantilla base para practicar las katas del curso o para empezar un proyecto nuevo.
+Vamos a programar una función booleana que indica si una contraseña dada cumple con unos requisitos de fortaleza. Para que la función produzca un resultado verdadero, la contraseña debe de:
 
-Incluye:
-* TypeScript
-* Jest
-* ESLint
-* Prettier
-* Husky
+* Tener una longitud de al menos seis caracteres
+* Contener algún número
+* Contener alguna letra mayúscula
+* Contener alguna letra minúscula
+* Contener algún guion bajo
 
 ## Instrucciones
 * `npm install`
