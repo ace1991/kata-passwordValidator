@@ -23,4 +23,7 @@ describe('The password ', () => {
     it('is too short', () => {
         expect(isStrongEnough('Ab1_')).toBe(false);
     });
+    it('don`t contain a number', () => {
+        expect(isStrongEnough('ABCdfq_')).toBe(false);
+    });
 });
