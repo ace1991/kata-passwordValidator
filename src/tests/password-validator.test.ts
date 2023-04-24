@@ -26,13 +26,13 @@ describe('The password ', () => {
     it('doesn`t contain a number', () => {
         expect(isStrongEnough('ABCdfq_')).toBe(false);
     });
-    it('doesn`t contain a capital letter', () => {
+    it('doesn`t contain a uppercase letter', () => {
         expect(isStrongEnough('32123213ab_')).toBe(false);
     });
     it('doesn`t contain a lowercase letter', () => {
         expect(isStrongEnough('12344678A_')).toBe(false);
     });
-    it('doesn`t contain a hyphen', () => {
+    it('doesn`t contain a underscore', () => {
         expect(isStrongEnough('ABCde12')).toBe(false);
     });
 });
