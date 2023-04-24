@@ -1,3 +1,3 @@
 export function isStrongEnough(s: string) {
-    return true;
+    return s.length>=6;
 }
