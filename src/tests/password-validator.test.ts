@@ -8,7 +8,7 @@
 * 1234Ab_ -> True
 * 12344678A_ -> False
 * 32123213ab_ -> False
-* 123 -> False
+* Ab1_ -> False
 * ABCdfq_ -> False
 * ABCde12 -> False
 *
@@ -19,5 +19,8 @@ import {isStrongEnough} from "../core/password-validator";
 describe('The password ', () => {
     it('meet all the security requirements', () => {
         expect(isStrongEnough('1234Ab_')).toBe(true);
+    });
+    it('is too short', () => {
+        expect(isStrongEnough('Ab1_')).toBe(false);
     });
 });
