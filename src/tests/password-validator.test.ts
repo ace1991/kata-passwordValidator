@@ -32,4 +32,7 @@ describe('The password ', () => {
     it('doesn`t contain a lowercase letter', () => {
         expect(isStrongEnough('12344678A_')).toBe(false);
     });
+    it('doesn`t contain a hyphen', () => {
+        expect(isStrongEnough('ABCde12')).toBe(false);
+    });
 });
