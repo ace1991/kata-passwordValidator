@@ -29,4 +29,7 @@ describe('The password ', () => {
     it('doesn`t contain a capital letter', () => {
         expect(isStrongEnough('32123213ab_')).toBe(false);
     });
+    it('doesn`t contain a lowercase letter', () => {
+        expect(isStrongEnough('12344678A_')).toBe(false);
+    });
 });
